@@ -4,7 +4,7 @@ import me.fabricmodtest.FabricMod
 import me.fabricmodtest.block.custom.MythrilBlock
 import me.fabricmodtest.block.custom.MythrilOre
 import me.fabricmodtest.block.custom.SpeedyBlock
-import me.fabricmodtest.item.ItemsGroup
+import me.fabricmodtest.item.ItemsGroupRegistry
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.Block
@@ -21,27 +21,27 @@ object BlocksRegistry {
     @JvmStatic val MYTHRIL_BLOCK = registerBlock(
         MythrilBlock.ID,
         Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().luminance(6)),
-        ItemsGroup.GROUP,
+        ItemsGroupRegistry.GROUP,
     )
     @JvmStatic val MYTHRIL_ORE = registerBlock(
         MythrilOre.getVariantID(OreVariant.STONE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        ItemsGroup.GROUP,
+        ItemsGroupRegistry.GROUP,
     )
     @JvmStatic val MYTHRIL_ORE_DEEPSLATE = registerBlock(
         MythrilOre.getVariantID(OreVariant.DEEPSLATE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        ItemsGroup.GROUP,
+        ItemsGroupRegistry.GROUP,
     )
     @JvmStatic val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        ItemsGroup.GROUP,
+        ItemsGroupRegistry.GROUP,
     )
     @JvmStatic val SPEEDY_BLOCK = registerBlock(
         SpeedyBlock.ID,
         SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()),
-        ItemsGroup.GROUP,
+        ItemsGroupRegistry.GROUP,
     )
 
     fun register() {

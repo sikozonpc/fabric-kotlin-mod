@@ -1,6 +1,7 @@
 package me.fabricmodtest
 
 import me.fabricmodtest.block.BlocksRegistry
+import me.fabricmodtest.item.FoodComponentsRegistry
 import me.fabricmodtest.item.ItemsRegistry
 import net.fabricmc.api.ModInitializer
 import org.apache.logging.log4j.LogManager
@@ -14,6 +15,7 @@ object FabricMod : ModInitializer {
 
     override fun onInitialize() {
         ItemsRegistry.register()
+        FoodComponentsRegistry.register()
         BlocksRegistry.register()
 
         Logger.info("Fabric Test Mod has been initialized.")

@@ -11,23 +11,23 @@ import net.minecraft.util.registry.Registry
 object ItemsRegistry {
     @JvmStatic  val MYTHRIL_INGOT = registerItem(
         Mythrilngot.ID,
-        Mythrilngot(FabricItemSettings().group(ItemsGroup.GROUP)),
+        Mythrilngot(FabricItemSettings().group(ItemsGroupRegistry.GROUP)),
     )
     @JvmStatic val MYTHRIL_NUGGET = registerItem(
         MythrilNugget.ID,
-        MythrilNugget(FabricItemSettings().group(ItemsGroup.GROUP)),
+        MythrilNugget(FabricItemSettings().group(ItemsGroupRegistry.GROUP)),
     )
     @JvmStatic val MYTHRIL_RAW = registerItem(
         RawMythril.ID,
-        RawMythril(FabricItemSettings().group(ItemsGroup.GROUP)),
+        RawMythril(FabricItemSettings().group(ItemsGroupRegistry.GROUP)),
     )
     @JvmStatic val DOWSING_ROD = registerItem(
         DowsingRodItem.ID,
-        DowsingRodItem(FabricItemSettings().group(ItemsGroup.GROUP).maxDamage(16)),
+        DowsingRodItem(FabricItemSettings().group(ItemsGroupRegistry.GROUP).maxDamage(16)),
     )
     @JvmStatic val LILAC_FLOWER_BULB = registerItem(
         LilacFlowerBulb.ID,
-        LilacFlowerBulb(FabricItemSettings().group(ItemsGroup.GROUP)),
+        LilacFlowerBulb(FabricItemSettings().group(ItemsGroupRegistry.GROUP)),
     )
 
     fun register() {
@@ -36,7 +36,7 @@ object ItemsRegistry {
         FabricMod.Logger.info("[${FabricMod.MOD_ID}] Registering items...")
     }
 
-    private fun registerItem(name: String, item: Item): Item {
+    fun registerItem(name: String, item: Item): Item {
         return Registry.register(Registry.ITEM, Identifier(FabricMod.MOD_ID, name), item)
     }
 }
