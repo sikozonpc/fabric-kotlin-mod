@@ -8,17 +8,17 @@ import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
 object ItemsRegistry {
-    val MYTHRIL_INGOT = registerItem(
+    @JvmStatic  val MYTHRIL_INGOT = registerItem(
         Mythrilngot.ID,
-        Mythrilngot(FabricItemSettings().group(FabricMod.MOD_ITEMS_GROUP)),
+        Mythrilngot(FabricItemSettings().group(ItemsGroup.GROUP)),
     )
-    val MYTHRIL_NUGGET = registerItem(
+    @JvmStatic val MYTHRIL_NUGGET = registerItem(
         MythrilNugget.ID,
-        MythrilNugget(FabricItemSettings().group(FabricMod.MOD_ITEMS_GROUP)),
+        MythrilNugget(FabricItemSettings().group(ItemsGroup.GROUP)),
     )
-    val MYTHRIL_RAW = registerItem(
+    @JvmStatic val MYTHRIL_RAW = registerItem(
         RawMythril.ID,
-        RawMythril(FabricItemSettings().group(FabricMod.MOD_ITEMS_GROUP)),
+        RawMythril(FabricItemSettings().group(ItemsGroup.GROUP)),
     )
 
     fun register() {

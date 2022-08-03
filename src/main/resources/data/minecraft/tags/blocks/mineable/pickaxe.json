@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fabricmodtest:mythril_ore",
+    "fabricmodtest:deepslate_mythril_ore",
+    "fabricmodtest:netherrack_mythril_ore",
+    "fabricmodtest:mythril_block"
+  ]
+}

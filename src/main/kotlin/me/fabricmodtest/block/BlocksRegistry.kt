@@ -1,6 +1,7 @@
 package me.fabricmodtest.block
 
 import me.fabricmodtest.FabricMod
+import me.fabricmodtest.item.ItemsGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.Block
@@ -14,25 +15,25 @@ import net.minecraft.util.registry.Registry
 enum class OreVariant { STONE, DEEPSLATE, NETHERRACK }
 
 object BlocksRegistry {
-    val MYTHRIL_BLOCK = registerBlock(
+    @JvmStatic val MYTHRIL_BLOCK = registerBlock(
         MythrilBlock.ID,
         Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().luminance(6)),
-        FabricMod.MOD_ITEMS_GROUP,
+        ItemsGroup.GROUP,
     )
-    val MYTHRIL_ORE = registerBlock(
+    @JvmStatic val MYTHRIL_ORE = registerBlock(
         MythrilOre.getVariantID(OreVariant.STONE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        FabricMod.MOD_ITEMS_GROUP,
+        ItemsGroup.GROUP,
     )
-    val MYTHRIL_ORE_DEEPSLATE = registerBlock(
+    @JvmStatic val MYTHRIL_ORE_DEEPSLATE = registerBlock(
         MythrilOre.getVariantID(OreVariant.DEEPSLATE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        FabricMod.MOD_ITEMS_GROUP,
+        ItemsGroup.GROUP,
     )
     val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
-        FabricMod.MOD_ITEMS_GROUP,
+        ItemsGroup.GROUP,
     )
 
     fun register() {
