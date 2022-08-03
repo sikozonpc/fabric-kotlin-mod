@@ -51,6 +51,6 @@ class SpeedyBlock(settings: Settings) : Block(settings) {
             }
         }
 
-        super.onSteppedOn(world, pos, state, entity)
+        return super.onSteppedOn(world, pos, state, entity)
     }
 }

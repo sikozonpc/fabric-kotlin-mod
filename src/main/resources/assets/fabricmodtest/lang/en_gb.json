@@ -9,5 +9,7 @@
   "block.fabricmodtest.netherrack_mythril_ore": "Netherack Mythril Ore",
   "block.fabricmodtest.deepslate_mythril_ore": "Deepslate Mythril Ore",
   "item.fabricmodtest.dowsing_rod": "Dowsing Rod",
-  "item.fabricmodtest.dowsing_rod.no_valuables": "No valuables found"
+  "item.fabricmodtest.dowsing_rod.no_valuables": "No valuables found",
+  "item.fabricmodtest.lilac_flower_bulb": "Lilac Flower Bulb",
+  "item.fabricmodtest.speedy_block": "Speedy Block"
 }

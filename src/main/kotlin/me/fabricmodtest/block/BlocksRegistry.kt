@@ -3,6 +3,7 @@ package me.fabricmodtest.block
 import me.fabricmodtest.FabricMod
 import me.fabricmodtest.block.custom.MythrilBlock
 import me.fabricmodtest.block.custom.MythrilOre
+import me.fabricmodtest.block.custom.SpeedyBlock
 import me.fabricmodtest.item.ItemsGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
@@ -32,9 +33,14 @@ object BlocksRegistry {
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
         ItemsGroup.GROUP,
     )
-    val MYTHRIL_ORE_NETHERRACK = registerBlock(
+    @JvmStatic val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
+        ItemsGroup.GROUP,
+    )
+    @JvmStatic val SPEEDY_BLOCK = registerBlock(
+        SpeedyBlock.ID,
+        SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()),
         ItemsGroup.GROUP,
     )
 
