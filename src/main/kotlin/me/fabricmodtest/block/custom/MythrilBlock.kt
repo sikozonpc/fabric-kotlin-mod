@@ -1,10 +1,9 @@
 package me.fabricmodtest.block.custom
 
+import net.minecraft.block.Block
 
-import net.minecraft.item.Item
 
-
-class MythrilBlock(settings: Settings) : Item(settings) {
+class MythrilBlock(settings: Settings) : Block(settings) {
     companion object {
         val ID = "mythril_block"
     }

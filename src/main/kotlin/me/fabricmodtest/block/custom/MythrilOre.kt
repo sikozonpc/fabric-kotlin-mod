@@ -1,10 +1,10 @@
 package me.fabricmodtest.block.custom
 
 import me.fabricmodtest.block.OreVariant
-import net.minecraft.item.Item
+import net.minecraft.block.Block
 
 
-class MythrilOre(settings: Settings) : Item(settings) {
+class MythrilOre(settings: Settings) : Block(settings) {
     companion object {
         fun getVariantID(variant: OreVariant): String = when (variant) {
             OreVariant.STONE -> "mythril_ore"
