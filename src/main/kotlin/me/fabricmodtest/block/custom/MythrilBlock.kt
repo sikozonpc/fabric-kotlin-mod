@@ -1,4 +1,4 @@
-package me.fabricmodtest.block
+package me.fabricmodtest.block.custom
 
 
 import net.minecraft.item.Item

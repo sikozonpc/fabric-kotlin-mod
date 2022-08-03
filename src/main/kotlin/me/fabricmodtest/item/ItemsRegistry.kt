@@ -1,6 +1,10 @@
 package me.fabricmodtest.item
 
 import me.fabricmodtest.FabricMod
+import me.fabricmodtest.item.custom.DowsingRodItem
+import me.fabricmodtest.item.custom.MythrilNugget
+import me.fabricmodtest.item.custom.Mythrilngot
+import me.fabricmodtest.item.custom.RawMythril
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.registry.FuelRegistry
 import net.minecraft.item.Item
@@ -19,6 +23,10 @@ object ItemsRegistry {
     @JvmStatic val MYTHRIL_RAW = registerItem(
         RawMythril.ID,
         RawMythril(FabricItemSettings().group(ItemsGroup.GROUP)),
+    )
+    @JvmStatic val DOWSING_ROD = registerItem(
+        DowsingRodItem.ID,
+        DowsingRodItem(FabricItemSettings().group(ItemsGroup.GROUP).maxDamage(16)),
     )
 
     fun register() {

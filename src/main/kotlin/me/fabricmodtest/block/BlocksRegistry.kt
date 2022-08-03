@@ -1,6 +1,8 @@
 package me.fabricmodtest.block
 
 import me.fabricmodtest.FabricMod
+import me.fabricmodtest.block.custom.MythrilBlock
+import me.fabricmodtest.block.custom.MythrilOre
 import me.fabricmodtest.item.ItemsGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings

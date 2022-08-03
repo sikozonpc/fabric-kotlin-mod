@@ -1,5 +1,6 @@
-package me.fabricmodtest.block
+package me.fabricmodtest.block.custom
 
+import me.fabricmodtest.block.OreVariant
 import net.minecraft.item.Item
 
 

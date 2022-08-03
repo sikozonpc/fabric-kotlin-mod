@@ -1,4 +1,4 @@
-package me.fabricmodtest.item
+package me.fabricmodtest.item.custom
 
 import me.fabricmodtest.FabricMod
 import net.minecraft.client.item.TooltipContext
