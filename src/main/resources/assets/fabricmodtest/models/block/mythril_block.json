@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fabricmodtest:block/mythril_block"
+  }
+}

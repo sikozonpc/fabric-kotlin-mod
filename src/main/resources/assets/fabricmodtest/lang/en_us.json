@@ -1,0 +1,10 @@
+{
+  "item.fabricmodtest.mythril_ingot": "Mythril Ingot",
+  "item.fabricmodtest.mythril_ingot.tooltip": "Hello there dude!",
+  "item.fabricmodtest.mythril_nugget": "Mythril Nugget",
+  "item.fabricmodtest.raw_mythril": "Raw Mythril",
+  "block.fabricmodtest.mythril_block": "Mythril Block",
+  "block.fabricmodtest.mythril_ore": "Mythril Ore",
+  "block.fabricmodtest.netherrack_mythril_ore": "Netherack Mythril Ore",
+  "block.fabricmodtest.deepslate_mythril_ore": "Deepslate Mythril Ore"
+}

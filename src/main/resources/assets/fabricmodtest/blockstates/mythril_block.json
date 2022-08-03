@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "fabricmodtest:block/mythril_block" }
+  }
+}
