@@ -6,10 +6,12 @@ import me.fabricmodtest.item.ItemsGroupRegistry
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
+import net.minecraft.block.BlockState
 import net.minecraft.block.FenceBlock
 import net.minecraft.block.FenceGateBlock
 import net.minecraft.block.Material
 import net.minecraft.block.PressurePlateBlock
+import net.minecraft.block.SlabBlock
 import net.minecraft.block.WallBlock
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.item.BlockItem
@@ -35,25 +37,25 @@ object BlocksRegistry {
     @JvmStatic
     val MYTHRIL_ORE = registerBlock(
         MythrilOre.getVariantID(OreVariant.STONE),
-        Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
+        Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
     @JvmStatic
     val MYTHRIL_ORE_DEEPSLATE = registerBlock(
         MythrilOre.getVariantID(OreVariant.DEEPSLATE),
-        Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
+        Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
     @JvmStatic
     val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
-        Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
+        Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
     @JvmStatic
     val SPEEDY_BLOCK = registerBlock(
         SpeedyBlock.ID,
-        SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()),
+        SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
         ItemsGroupRegistry.GROUP,
         "block.fabricmodtest.speedy_block.tooltip",
     )
@@ -85,6 +87,30 @@ object BlocksRegistry {
     val MYTHRIL_WALL = registerBlock(
         "mythril_wall",
         WallBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_SLAB = registerBlock(
+        "mythril_slab",
+        SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_STAIRS = registerBlock(
+        "mythril_stairs",
+        ModStairsBlock(MYTHRIL_BLOCK.defaultState, FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val KAUPEN_DOOR = registerBlock(
+        "kaupen_door",
+        ModDoorBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val KAUPEN_TRAPDOOR = registerBlock(
+        "kaupen_trapdoor",
+        ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()),
         ItemsGroupRegistry.GROUP,
     )
 

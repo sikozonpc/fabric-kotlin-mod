@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fabricmodtest:block/mythril_slab"
+    },
+    "type=double": {
+      "model": "fabricmodtest:block/mythril_block"
+    },
+    "type=top": {
+      "model": "fabricmodtest:block/mythril_slab_top"
+    }
+  }
+}

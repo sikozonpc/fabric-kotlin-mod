@@ -1,0 +1,7 @@
+{
+  "parent": "fabricmodtest:block/door_bottom_rh",
+  "textures": {
+    "top": "fabricmodtest:block/kaupen_door_top",
+    "bottom": "fabricmodtest:block/kaupen_door_bottom"
+  }
+}
