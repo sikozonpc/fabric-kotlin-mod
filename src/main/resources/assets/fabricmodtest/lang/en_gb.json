@@ -24,5 +24,10 @@
   "block.fabricmodtest.kaupen_door": "Kaupen Door",
   "block.fabricmodtest.kaupen_trapdoor": "Kaupen Trapdoor",
   "block.fabricmodtest.mythril_slab": "Mythril Slab",
-  "block.fabricmodtest.mythril_stairs": "Mythril Stairs"
+  "block.fabricmodtest.mythril_stairs": "Mythril Stairs",
+  "item.fabricmodtest.mythril_pickaxe": "Mythril Pickaxe",
+  "item.fabricmodtest.mythril_axe": "Mythril Axe",
+  "item.fabricmodtest.mythril_shovel": "Mythril Shovel",
+  "item.fabricmodtest.mythril_hoe": "Mythril Hoe",
+  "item.fabricmodtest.mythril_sword": "Mythril Sword"
 }

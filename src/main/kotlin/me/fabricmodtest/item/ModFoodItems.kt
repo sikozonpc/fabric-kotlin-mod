@@ -4,10 +4,10 @@ import me.fabricmodtest.FabricMod
 import me.fabricmodtest.item.custom.food.GrapeItem
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 
-object FoodComponentsRegistry {
-	@JvmStatic val GRAPE = ItemsRegistry.registerItem(
+object ModFoodItems {
+	@JvmStatic val GRAPE = ModItems.registerItem(
 		GrapeItem.ID,
-		GrapeItem(FabricItemSettings().group(ItemsGroupRegistry.GROUP).food(GrapeItem.foodComponent)),
+		GrapeItem(FabricItemSettings().group(ModItemGroups.GROUP).food(GrapeItem.foodComponent)),
 	)
 
 	fun register() {

@@ -6,9 +6,9 @@ import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.util.Identifier
 
-object ItemsGroupRegistry {
+object ModItemGroups {
     val GROUP: ItemGroup = FabricItemGroupBuilder.create(
         Identifier(FabricMod.MOD_ID, FabricMod.MOD_ID))
-        .icon { ItemStack(ItemsRegistry.MYTHRIL_INGOT) }
+        .icon { ItemStack(ModItems.MYTHRIL_INGOT) }
         .build()
 }

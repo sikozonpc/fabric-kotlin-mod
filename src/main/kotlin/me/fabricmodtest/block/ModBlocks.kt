@@ -2,11 +2,10 @@ package me.fabricmodtest.block
 
 import me.fabricmodtest.FabricMod
 import me.fabricmodtest.block.custom.*
-import me.fabricmodtest.item.ItemsGroupRegistry
+import me.fabricmodtest.item.ModItemGroups
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
-import net.minecraft.block.BlockState
 import net.minecraft.block.FenceBlock
 import net.minecraft.block.FenceGateBlock
 import net.minecraft.block.Material
@@ -32,86 +31,86 @@ object BlocksRegistry {
     val MYTHRIL_BLOCK = registerBlock(
         MythrilBlock.ID,
         Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().luminance(6)),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_ORE = registerBlock(
         MythrilOre.getVariantID(OreVariant.STONE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_ORE_DEEPSLATE = registerBlock(
         MythrilOre.getVariantID(OreVariant.DEEPSLATE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val SPEEDY_BLOCK = registerBlock(
         SpeedyBlock.ID,
         SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
         "block.fabricmodtest.speedy_block.tooltip",
     )
     @JvmStatic
     val MYTHRIL_BUTTON = registerBlock(
         ModStoneButtonBlock.ID,
         ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).requiresTool().noCollision()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_PRESSURE_PLATE = registerBlock(
         ModPressurePlateBlock.ID,
         ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING ,FabricBlockSettings.of(Material.METAL).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_FENCE = registerBlock(
         "mythril_fence",
         FenceBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_FENCE_GATE = registerBlock(
         "mythril_fence_gate",
         FenceGateBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_WALL = registerBlock(
         "mythril_wall",
         WallBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_SLAB = registerBlock(
         "mythril_slab",
         SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val MYTHRIL_STAIRS = registerBlock(
         "mythril_stairs",
         ModStairsBlock(MYTHRIL_BLOCK.defaultState, FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val KAUPEN_DOOR = registerBlock(
         "kaupen_door",
         ModDoorBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
     @JvmStatic
     val KAUPEN_TRAPDOOR = registerBlock(
         "kaupen_trapdoor",
         ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque()),
-        ItemsGroupRegistry.GROUP,
+        ModItemGroups.GROUP,
     )
 
     fun register() {
