@@ -54,7 +54,10 @@ class DowsingRodItem(settings: Settings) : Item(settings) {
     }
 
     override fun appendTooltip(
-        stack: ItemStack?, world: World?, tooltip: MutableList<Text>?, context: TooltipContext?
+        stack: ItemStack?,
+        world: World?,
+        tooltip: MutableList<Text>?,
+        context: TooltipContext?,
     ) {
         when {
             Screen.hasShiftDown() -> tooltip?.add(TranslatableText("item.fabricmodtest.dowsing_rod.tooltip.shift"))

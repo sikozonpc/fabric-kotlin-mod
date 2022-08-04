@@ -1,14 +1,16 @@
 package me.fabricmodtest.block
 
 import me.fabricmodtest.FabricMod
-import me.fabricmodtest.block.custom.MythrilBlock
-import me.fabricmodtest.block.custom.MythrilOre
-import me.fabricmodtest.block.custom.SpeedyBlock
+import me.fabricmodtest.block.custom.*
 import me.fabricmodtest.item.ItemsGroupRegistry
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
+import net.minecraft.block.FenceBlock
+import net.minecraft.block.FenceGateBlock
 import net.minecraft.block.Material
+import net.minecraft.block.PressurePlateBlock
+import net.minecraft.block.WallBlock
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
@@ -30,34 +32,60 @@ object BlocksRegistry {
         Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().luminance(6)),
         ItemsGroupRegistry.GROUP,
     )
-
     @JvmStatic
     val MYTHRIL_ORE = registerBlock(
         MythrilOre.getVariantID(OreVariant.STONE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
-
     @JvmStatic
     val MYTHRIL_ORE_DEEPSLATE = registerBlock(
         MythrilOre.getVariantID(OreVariant.DEEPSLATE),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
-
     @JvmStatic
     val MYTHRIL_ORE_NETHERRACK = registerBlock(
         MythrilOre.getVariantID(OreVariant.NETHERRACK),
         Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()),
         ItemsGroupRegistry.GROUP,
     )
-
     @JvmStatic
     val SPEEDY_BLOCK = registerBlock(
         SpeedyBlock.ID,
         SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()),
         ItemsGroupRegistry.GROUP,
         "block.fabricmodtest.speedy_block.tooltip",
+    )
+    @JvmStatic
+    val MYTHRIL_BUTTON = registerBlock(
+        ModStoneButtonBlock.ID,
+        ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).requiresTool().noCollision()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_PRESSURE_PLATE = registerBlock(
+        ModPressurePlateBlock.ID,
+        ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING ,FabricBlockSettings.of(Material.METAL).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_FENCE = registerBlock(
+        "mythril_fence",
+        FenceBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_FENCE_GATE = registerBlock(
+        "mythril_fence_gate",
+        FenceGateBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
+        ItemsGroupRegistry.GROUP,
+    )
+    @JvmStatic
+    val MYTHRIL_WALL = registerBlock(
+        "mythril_wall",
+        WallBlock(FabricBlockSettings.of(Material.METAL).requiresTool()),
+        ItemsGroupRegistry.GROUP,
     )
 
     fun register() {
@@ -78,7 +106,7 @@ object BlocksRegistry {
                     stack: ItemStack?,
                     world: World?,
                     tooltip: MutableList<Text>?,
-                    context: TooltipContext?
+                    context: TooltipContext?,
                 ) {
                     if (tooltipKey.isEmpty()) return
                     tooltip?.add(TranslatableText(tooltipKey))

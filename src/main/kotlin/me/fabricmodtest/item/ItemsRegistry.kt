@@ -31,8 +31,6 @@ object ItemsRegistry {
     )
 
     fun register() {
-        FuelRegistry.INSTANCE.add(MYTHRIL_RAW, 300)
-
         FabricMod.Logger.info("[${FabricMod.MOD_ID}] Registering items...")
     }
 

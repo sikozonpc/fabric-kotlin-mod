@@ -15,5 +15,14 @@
   "item.fabricmodtest.lilac_flower_bulb": "Lilac Flower Bulb",
   "item.fabricmodtest.grape": "Grape",
   "block.fabricmodtest.speedy_block": "Speedy Block",
-  "block.fabricmodtest.speedy_block.tooltip": "Applies a speed effect to those who step on it."
+  "block.fabricmodtest.speedy_block.tooltip": "Applies a speed effect to those who step on it.",
+  "block.fabricmodtest.mythril_button": "Mythril Button",
+  "block.fabricmodtest.mythril_pressure_plate": "Mythril Pressure Plate",
+  "block.fabricmodtest.mythril_fence": "Mythril Fence",
+  "block.fabricmodtest.mythril_wall": "Mythril Wall",
+  "block.fabricmodtest.mythril_fence_gate": "Mythril Fence Gate",
+  "block.fabricmodtest.kaupen_door": "Kaupen Door",
+  "block.fabricmodtest.kaupen_trapdoor": "Kaupen Trapdoor",
+  "block.fabricmodtest.mythril_slab": "Mythril Slab",
+  "block.fabricmodtest.mythril_stairs": "Mythril Stairs"
 }
